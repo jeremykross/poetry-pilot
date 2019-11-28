@@ -1,0 +1,4 @@
+{:deps {com.bhauman/figwheel-main {:mvn/version "0.2.3"}
+        entr {:local/root "/home/jkross/entr"}
+        ulmus {:local/root "/home/jkross/ulmus"}}
+ :paths ["src" "target" "resources"]}

@@ -1,0 +1,41 @@
+body, body * {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  position: relative;
+  width: 640px;
+  height: 360px;
+
+  transform: scale(1.75, 1.75);
+  transform-origin: 0 0;
+}
+
+#hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+canvas {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+canvas#background {
+}
+
+canvas#foreground {
+  z-index: 1;
+}
